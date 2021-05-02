@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>ServiOn</title>
+  <meta name="description" content="Проект 'ServiOn' для портфолио lostsleepyboii.">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicons/favicon-16x16.png">
+  <link rel="mask-icon" href="images/icons/favicons/safari-pinned-tab.svg" color="#424d83">
+  <meta name="msapplication-TileColor" content="#384170">
+  <meta name="theme-color" content="#384170">
+</head>
+<body>
+  <div class="overlay"></div>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#intro"><img src="images/logo.svg" alt="Logo" width="100" height="22"></a>
+        <div class="burger" onclick="toggleMenu()">
+          <span></span>
+        </div>
+        <nav class="nav">
+          <a class="nav__link" href="#intro" onclick="disableMenu()">Home</a>
+          <a class="nav__link" href="#about" onclick="disableMenu()">About Us</a>
+          <a class="nav__link" href="#support" onclick="disableMenu()">Tools & Resources</a>
+          <a class="nav__link" href="#services" onclick="disableMenu()">Services</a>
+          <button class="btn btn--cta">
+            <span>Login</span>
+            <svg class="icon__user">
+              <use href="images/icons/sprite.svg#user"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="intro" id="intro">
+    <div class="container">
+      <div class="intro__inner">
+        <div class="intro__content">
+          <h1 class="intro__title">Web Hosting Easy and Secure</h1>
+          <div class="intro__subtitle">Full control of what you use and pay for</div>
+          <form class="intro__search">
+            <div class="intro__form">
+              <input aria-label="Search for a domain name" class="intro__input" placeholder="Search for a domain name" type="text" autocomplete="off">
+              <div class="intro__select">
+                <select aria-label="Select for a domain name">
+                  <option value="1">.com</option>
+                  <option value="1">.ru</option>
+                  <option value="2">.net</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn--check">Check Availability</button>
+          </form>
+        </div>
+        <img class="intro__image lazy" src="/" data-src="images/server.svg" alt="server" width="789" height="372">
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <h2 class="about__title">What will you get if you'll join us</h2>
+        <div class="about__subtitle">Get the best web hosting service at the price you can afford</div>
+        <div class="about__wrapper">
+          <div class="about__list">
+            <div class="about__item">
+              <img class="about__icon lazy" src="/" data-src="images/icons/about/about-1.svg" alt="WE GIVE A CARE" width="70" height="70">
+              <div class="about__content">
+                <h3 class="about__name">WE GIVE A CARE</h3>
+                <p class="about__desc">Beside the support we provide you with various tools to be able to host and
+                  manage your websites</p>
+              </div>
+            </div>
+            <div class="about__item">
+              <img class="about__icon lazy" src="/" data-src="images/icons/about/about-2.svg" alt="TWEAK AS YOU WISH" width="70" height="70">
+              <div class="about__content">
+                <h3 class="about__name">TWEAK AS YOU WISH</h3>
+                <p class="about__desc">Be able to customize your plan over time if needed so you pay only for what you
+                  use</p>
+              </div>
+            </div>
+            <div class="about__item">
+              <img class="about__icon lazy" src="/" data-src="images/icons/about/about-3.svg" alt="SECURITY AT ITS BEST" width="70" height="70">
+              <div class="about__content">
+                <h3 class="about__name">SECURITY AT ITS BEST</h3>
+                <p class="about__desc">We are the most reliable service provider, ready to give you a helping hand the
+                  fastest way possible 24/7</p>
+              </div>
+            </div>
+          </div>
+          <picture class="about__image">
+            <source srcset="/" data-srcset="images/servion.webp" type="image/webp">
+            <img class="lazy" src="/" data-src="images/servion.png" alt="About" width="837" height="516">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="support" id="support">
+    <div class="container">
+      <h2 class="support__title">Don't know where to start from?</h2>
+      <div class="support__subtitle">We've got the best articles,tools and resources to help you to start</div>
+      <div class="support__inner">
+        <div class="support__block support__block--1 lazy-bg">
+          <div class="support__block__content">
+            <img class="support__icon lazy" src="/" data-src="images/icons/support/support-1.svg" alt="PLANING TO BUILD A WEBSITE" width="77" height="77">
+            <h3 class="support__name">PLANING TO BUILD A WEBSITE</h3>
+            <p class="support__desc">You want to build a new website but not sure what to start with? We've prepared a
+              step by step guide for you to handle the whole process from design to launch.</p>
+          </div>
+          <button class="btn btn--more btn--more--first">
+            <span>Learn more</span>
+            <svg class="icon__more">
+              <use href="images/icons/sprite.svg#more"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="support__block support__block--2 lazy-bg">
+          <div class="support__block__content">
+            <img class="support__icon lazy" src="/" data-src="images/icons/support/support-2.svg" alt="WANT TO MOVE A WEBSITE TO SERVION" width="77" height="77">
+            <h3 class="support__name">WANT TO MOVE A WEBSITE TO SERVION</h3>
+            <p class="support__desc">Already have an existing website and want to move it to Servion but not sure how to
+              do it? No worries, it's not difficult, we can handle all the work for you.</p>
+          </div>
+          <button class="btn btn--more">
+            <span>Learn more</span>
+            <svg class="icon__more">
+              <use href="images/icons/sprite.svg#more"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="services__title">Types of hosting that we provide</h2>
+      <div class="services__subtitle">Our service is always affordable for everyone.</div>
+      <div class="services__slider swiper-container">
+        <div class="services__list swiper-wrapper">
+          <article class="services__card card swiper-slide">
+            <div class="card__face1">
+              <div class="card__header">
+                <img class="card__icon lazy" src="/" data-src="images/icons/services/service-1.svg" alt="SHARED HOSTING" width="66" height="64">
+                <h3 class="card__name">SHARED HOSTING</h3>
+                <p class="card__desc">Increase the rank of you website by the higher speed</p>
+              </div>
+              <div class="card__footer">
+                <div class="card__text">Get started at</div>
+                <div class="card__costs">
+                  <div class="card__cost">$15.99/</div>
+                  <div class="card__month">month</div>
+                </div>
+              </div>
+            </div>
+            <div class="card__face2">
+              <button class="btn btn--cust">
+                <span>CUSTOMISE PLAN</span>
+                <svg class="icon__more icon__more--cust">
+                  <use href="images/icons/sprite.svg#more"></use>
+                </svg>
+              </button>
+            </div>
+          </article>
+          <article class="services__card card swiper-slide">
+            <div class="card__face1">
+              <div class="card__header">
+                <img class="card__icon lazy" src="/" data-src="images/icons/services/service-2.svg" alt="VPS HOSTING" width="63" height="57">
+                <h3 class="card__name">VPS HOSTING</h3>
+                <p class="card__desc">Be able to conceal your ID whenever needed</p>
+              </div>
+              <div class="card__footer">
+                <div class="card__text">Get started at</div>
+                <div class="card__costs">
+                  <div class="card__cost">$8.99/</div>
+                  <div class="card__month">month</div>
+                </div>
+              </div>
+            </div>
+            <div class="card__face2">
+              <button class="btn btn--cust">
+                <span>CUSTOMISE PLAN</span>
+                <svg class="icon__more icon__more--cust">
+                  <use href="images/icons/sprite.svg#more"></use>
+                </svg>
+              </button>
+            </div>
+          </article>
+          <article class="services__card card swiper-slide">
+            <div class="card__face1">
+              <div class="card__header">
+                <img class="card__icon lazy" src="/" data-src="images/icons/services/service-3.svg" alt="CLOUD HOSTING" width="80" height="62">
+                <h3 class="card__name">CLOUD HOSTING</h3>
+                <p class="card__desc">Super convenient and highly customizable option</p>
+              </div>
+              <div class="card__footer">
+                <div class="card__text">Get started at</div>
+                <div class="card__costs">
+                  <div class="card__cost">$7.99/</div>
+                  <div class="card__month">month</div>
+                </div>
+              </div>
+            </div>
+            <div class="card__face2">
+              <button class="btn btn--cust">
+                <span>CUSTOMISE PLAN</span>
+                <svg class="icon__more icon__more--cust">
+                  <use href="images/icons/sprite.svg#more"></use>
+                </svg>
+              </button>
+            </div>
+          </article>
+          <article class="services__card card swiper-slide">
+            <div class="card__face1">
+              <div class="card__header">
+                <img class="card__icon lazy" src="/" data-src="images/icons/services/service-4.svg" alt="WORDPRESS HOSTING" width="69" height="61">
+                <h3 class="card__name">WORDPRESS HOSTING</h3>
+                <p class="card__desc">With low cost and high variety of tools, plugins of your choice</p>
+              </div>
+              <div class="card__footer">
+                <div class="card__text">Get started at</div>
+                <div class="card__costs">
+                  <div class="card__cost">$13.99/</div>
+                  <div class="card__month">month</div>
+                </div>
+              </div>
+            </div>
+            <div class="card__face2">
+              <button class="btn btn--cust">
+                <span>CUSTOMISE PLAN</span>
+                <svg class="icon__more icon__more--cust">
+                  <use href="images/icons/sprite.svg#more"></use>
+                </svg>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="reviews lazy-bg">
+    <div class="container">
+      <h2 class="reviews__title">Valued customers with valuable feedback</h2>
+      <div class="reviews__subtitle">Feedbacks from our happy users. Become one of them.</div>
+      <div class="reviews__slider swiper-container">
+        <div class="reviews__list swiper-wrapper">
+          <div class="reviews__item swiper-slide">
+            <picture>
+              <source srcset="/" data-srcset="images/testimonials/avatar-1.webp" type="image/webp">
+              <img class="reviews__avatar lazy" src="/" data-src="images/testimonials/avatar-1.png" alt="Erich Marks" width="108" height="108">
+            </picture>
+            <div class="reviews__content">
+              <div class="reviews__stars">★★★★★</div>
+              <div class="reviews__text">"I've been using servion for more than a year and I must say I've never had
+                such reliable service provider to work with. They've helped me out a lot"</div>
+              <div class="reviews__author">- Erich Marks</div>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <picture>
+              <source srcset="/" data-srcset="images/testimonials/avatar-2.webp" type="image/webp">
+              <img class="reviews__avatar lazy" src="/" data-src="images/testimonials/avatar-2.png" alt="Emily Hartman" width="108" height="108">
+            </picture>
+            <div class="reviews__content">
+              <div class="reviews__stars">★★★★★</div>
+              <div class="reviews__text">"I ve been using Servion for hosting many of my wordpress websites and I truly
+                appreciate how affordable it is"</div>
+              <div class="reviews__author">- Emily Hartman</div>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <picture>
+              <source srcset="/" data-srcset="images/testimonials/avatar-1.webp" type="image/webp">
+              <img class="reviews__avatar lazy" src="/" data-src="images/testimonials/avatar-1.png" alt="Erich Marks" width="108" height="108">
+            </picture>
+            <div class="reviews__content">
+              <div class="reviews__stars">★★★★★</div>
+              <div class="reviews__text">"I've been using servion for more than a year and I must say I've never had
+                such reliable service provider to work with. They've helped me out a lot"</div>
+              <div class="reviews__author">- Erich Marks</div>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <picture>
+              <source srcset="/" data-srcset="images/testimonials/avatar-2.webp" type="image/webp">
+              <img class="reviews__avatar lazy" src="/" data-src="images/testimonials/avatar-2.png" alt="Emily Hartman" width="108" height="108">
+            </picture>
+            <div class="reviews__content">
+              <div class="reviews__stars">★★★★★</div>
+              <div class="reviews__text">"I ve been using Servion for hosting many of my wordpress websites and I truly
+                appreciate how affordable it is"</div>
+              <div class="reviews__author">- Emily Hartman</div>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <picture>
+              <source srcset="/" data-srcset="images/testimonials/avatar-1.webp" type="image/webp">
+              <img class="reviews__avatar lazy" src="/" data-src="images/testimonials/avatar-1.png" alt="Erich Marks" width="108" height="108">
+            </picture>
+            <div class="reviews__content">
+              <div class="reviews__stars">★★★★★</div>
+              <div class="reviews__text">"I've been using servion for more than a year and I must say I've never had
+                such reliable service provider to work with. They've helped me out a lot"</div>
+              <div class="reviews__author">- Erich Marks</div>
+            </div>
+          </div>
+        </div>
+        <button aria-label="Previous" class="swiper-button-prev">
+          <svg class="icon__more icon__more--large">
+            <use href="images/icons/sprite.svg#prev"></use>
+          </svg>
+        </button>
+        <button aria-label="Next" class="swiper-button-next">
+          <svg class="icon__more icon__more--large">
+            <use href="images/icons/sprite.svg#next"></use>
+          </svg>
+        </button>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <section class="clients">
+    <div class="container">
+      <h2 class="clients__title">Our Clients</h2>
+      <div class="clients__subtitle">You can be the next one and may start for free</div>
+    </div>
+    <div class="clients__inner">
+      <div class="clients__list">
+        <div class="clients__track">
+          <img class="clients__item lazy" src="/" data-src="images/clients/robinhood.svg" alt="robinhood" width="243" height="60">
+          <img class="clients__item lazy" src="/" data-src="images/clients/reddit.svg" alt="reddit" width="200" height="64">
+          <img class="clients__item lazy" src="/" data-src="images/clients/upcase.svg" alt="upcase" width="200" height="42">
+          <img class="clients__item lazy" src="/" data-src="images/clients/hubspot.svg" alt="hubspot" width="200" height="57">
+          <img class="clients__item lazy" src="/" data-src="images/clients/tunein.svg" alt="tunein" width="200" height="43">
+          <img class="clients__item lazy" src="/" data-src="images/clients/robinhood.svg" alt="robinhood" width="243" height="60">
+          <img class="clients__item lazy" src="/" data-src="images/clients/reddit.svg" alt="reddit" width="200" height="64">
+          <img class="clients__item lazy" src="/" data-src="images/clients/upcase.svg" alt="upcase" width="200" height="42">
+          <img class="clients__item lazy" src="/" data-src="images/clients/hubspot.svg" alt="hubspot" width="200" height="57">
+          <img class="clients__item lazy" src="/" data-src="images/clients/tunein.svg" alt="tunein" width="200" height="43">
+        </div>
+      </div>
+      <div class="clients__btns">
+        <button class="btn btn--getfree">GET FREE TRIAL</button>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__block">
+          <div class="footer__item">
+            <h3 class="footer__item__name">HOSTING</h3>
+            <a class="footer__link" href="#">Shared Hosting</a>
+            <a class="footer__link" href="#">VPS Hosting</a>
+            <a class="footer__link" href="#">Cloud Hosting</a>
+            <a class="footer__link" href="#">Wordpress Hosting</a>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__item__name">FEATURES</h3>
+            <a class="footer__link" href="#">Beginner Guide</a>
+            <a class="footer__link" href="#">Move to Servion</a>
+            <a class="footer__link" href="#">Website Builder</a>
+            <a class="footer__link" href="#">Tools and Resources</a>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__item__name">SUPPORT</h3>
+            <a class="footer__link" href="#">Help Center</a>
+            <a class="footer__link" href="#">Submit a Ticket</a>
+            <a class="footer__link" href="#">Contact Us</a>
+            <a class="footer__link" href="#">Blog</a>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__item__name">WE ACCEPT</h3>
+            <div class="footer__payment">
+              <img class="footer__payment__icon lazy" src="/" data-src="images/icons/payments/visa.svg" alt="visa" width="87" height="49">
+              <img class="footer__payment__icon lazy" src="/" data-src="images/icons/payments/mastercard.svg" alt="mastercard" width="87" height="49">
+              <img class="footer__payment__icon lazy" src="/" data-src="images/icons/payments/unionpay.svg" alt="unionpay" width="87" height="49">
+              <img class="footer__payment__icon lazy" src="/" data-src="images/icons/payments/paypal.svg" alt="paypal" width="87" height="49">
+              <img class="footer__payment__icon lazy" src="/" data-src="images/icons/payments/american-express.svg" alt="american express" width="87" height="49">
+            </div>
+          </div>
+        </div>
+        <div class="footer__block">
+          <div class="footer__item">
+            <img class="footer__logo" src="images/logo.svg" alt="Logo" width="99" height="22">
+            <div class="footer__address">St. Patrick Ave., 10233</div>
+            <div class="footer__address">USA</div>
+          </div>
+          <div class="footer__item footer__item--social">
+            <div class="footer__social">
+              <a class="footer__social__link" href="https://t.me/lostsleepyboii" aria-label="instagram" target="_blank" rel="noopener">
+                <svg class="social__icon">
+                  <use href="images/icons/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <a class="footer__social__link" href="https://t.me/lostsleepyboii" aria-label="twitter" target="_blank" rel="noopener">
+                <svg class="social__icon social__icon--twitter">
+                  <use href="images/icons/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+              <a class="footer__social__link" href="https://t.me/lostsleepyboii" aria-label="youtube" target="_blank" rel="noopener">
+                <svg class="social__icon social__icon--youtube">
+                  <use href="images/icons/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+              <a class="footer__social__link" href="https://t.me/lostsleepyboii" aria-label="facebook" target="_blank" rel="noopener">
+                <svg class="social__icon social__icon--facebook">
+                  <use href="images/icons/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="footer__terms">
+              <a class="footer__terms__link" href="#">Terms of Service</a>
+              <a class="footer__terms__link" href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.min.js"></script>
+</body>
+</html>
