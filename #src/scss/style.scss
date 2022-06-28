@@ -1,0 +1,46 @@
+/*	Reset	*/
+@import "vendor/reset";
+
+/*	Imports	*/
+@import "vars";
+@import "mixins";
+@import "fonts";
+
+/*	Vendors	*/
+@import "vendor/glider";
+
+html {
+	font-size: 15px;
+}
+
+body {
+	margin: 0;
+	font-family: 'Nunito', sans-serif;
+	font-size: $font-m;
+	line-height: 1.6;
+	background-color: $white;
+	color: $white;
+}
+
+img {
+	opacity: 1;
+	transition: all 0.2s ease;
+}
+
+.lazy {
+	opacity: 0;
+}
+
+/*	Blocks	*/
+@import "blocks/container";
+@import "blocks/icons";
+@import "blocks/btn";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/support";
+@import "blocks/services";
+@import "blocks/reviews";
+@import "blocks/clients";
+@import "blocks/footer";

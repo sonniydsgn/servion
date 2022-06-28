@@ -1,0 +1,195 @@
+.services {
+   padding: 6.66rem 0;
+
+   &__title {
+      @include title
+   }
+
+   &__subtitle {
+      @include subtitle
+   }
+
+   &__list {
+      width: 100%;
+      padding-top: 1rem;
+      padding-bottom: 1.4rem;
+  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__card {
+      width: 23%;
+
+      margin: 0 1rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      border-radius: 5px;
+      box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.11);
+
+      transition: all 0.2s ease;
+
+      &:hover {
+         border-top: 12px solid $purple;
+         box-shadow: 6px 6px 25px 0px rgba(0, 0, 0, 0.11);
+
+         .services__card__face2 {
+            opacity: 1;
+            padding: 4rem 2.53rem;
+         }
+      }
+
+      &__face1 {
+         transform: translateY(20px);
+         width: 100%;
+      }
+
+      &__face2 {
+         opacity: 0;
+         transition: all 0.2s ease;
+         width: 100%;
+         text-align: center;
+      }
+   }
+
+   &__card__content {
+      width: 100%;
+      padding: 4rem 2.53rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      border-bottom: 2px solid #EBEBEB;
+   }
+
+   &__icon {
+      margin-bottom: 2.66rem;
+   }
+
+   &__name {
+      margin-bottom: 1.66rem;
+
+      color: $gray;
+      font-size: $font-l;
+      font-weight: 700;
+
+      text-align: center;
+      text-transform: uppercase;
+   }
+
+   &__desc {
+      color: $gray;
+      font-size: $font-m;
+      font-weight: 400;
+
+      text-align: center;
+   }
+
+   &__text {
+      color: $gray;
+      font-size: $font-m;
+      font-weight: 400;
+
+      text-align: center;
+   }
+
+   &__card__cost {
+      width: 100%;
+      padding-top: 2rem;
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__cost__content {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+   }
+
+   &__cost {
+      margin-right: 0.33rem;
+
+      color: $gray;
+      font-size: $font-cost;
+      font-weight: 400;
+   }
+
+   &__month {
+      position: relative;
+      bottom: 7px;
+
+      color: $gray;
+      font-size: $font-s;
+      font-weight: 400;
+   }
+}
+
+.glider-track {
+   align-items: flex-start;
+}
+
+.services-prev,
+.services-next {
+   display: none;
+
+   height: 52px;
+   width: 54px;
+   top: 30%;
+
+   border-radius: 5px;
+   background-color: rgba($purple, 0.15);
+
+   transition: all 0.5s ease;
+}
+
+
+// Media
+@include large-device {
+   .services__card {
+      margin: 0 1.86rem;
+   }
+
+   .services-prev,
+   .services-next {
+      display: block;
+   }
+}
+
+@include laptop {
+   .services__card {
+      margin: 0 5.58rem;
+   }
+
+   .services__desc {
+      font-size: $font-s;
+   }
+}
+
+@include l-tablet {
+   .services__card {
+      margin: 0 1.86rem;
+   }
+   
+   .services {
+     padding: 3.33rem 0;
+   }
+}
+
+@include sm-mobile {
+   .services__name {
+      font-size: 1.2rem;
+   }
+
+   .services__cost {
+      font-size: 2rem;
+   }
+}

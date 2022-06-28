@@ -1,0 +1,134 @@
+.nav {
+  display: inline-block;
+
+  &__link {
+    padding: 3.33rem 1.8rem 0.86rem 1.8rem;
+    margin-right: 1rem;
+    
+    color: $white;
+    font-size: $font-m;
+    font-weight: 400;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: lighten($purple, 15);
+    }
+  }
+}
+
+.nav__link.active {
+  border-radius: 0 0 5px 5px;
+  background-color: $purple;
+}
+
+.burger {
+  display: none;
+}
+
+// Media
+@include l-tablet {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+
+    overflow: auto;
+    
+    padding: 2.5rem;
+    margin: 0 auto;
+    
+    width: 90%;
+    height: 65%;
+    max-height: 436px;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    border-radius: 10px;
+    background-color: $darkest-purple;
+
+    transition: all 0.4s ease;
+  }
+  
+  .nav.show {
+    top: 90px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10);
+  }
+
+  .burger {
+    display: block;
+
+    position: relative;
+    width: 30px;
+    height: 20px;
+
+    cursor: pointer;
+  }
+
+  .burger span {
+    position: absolute;
+    left: 0;
+    top: 9px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $white;
+    transition: all 0.2s ease;
+  }
+
+  .burger::before,
+  .burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $white;
+    transition: all 0.2s ease;
+  }
+
+  .burger::before {
+    top: 0;
+  }
+
+  .burger::after {
+    bottom: 0;
+  }
+
+  .burger.show span {
+    transform: scale(0);
+  }
+
+  .burger.show::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .burger.show::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .nav__link {
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    margin-right: 0;
+
+    text-align: center;
+  }
+
+  .nav__link.active {
+    border-radius: 5px;
+    background-color: $purple;
+  }
+}

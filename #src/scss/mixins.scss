@@ -1,0 +1,104 @@
+// Fonts
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+  font-family: $font_name;
+  font-display: swap;
+  src:  url("../fonts/#{$file_name}.woff2") format("woff2");
+  font-weight: #{$weight};
+  font-style: #{$style};
+  }
+}
+
+// Media Mixins
+@mixin large-device {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin l-tablet {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 870px) {
+    @content;
+  }
+}
+
+@mixin sm-tablet {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin sm-mobile {
+  @media (max-width:420px) {
+    @content;
+  }
+}
+
+// Other
+@mixin title {
+  margin-bottom: 0.66rem;
+
+  color: $gray;
+  font-size: $font-xxl;
+  font-weight: 800;
+
+  text-align: center;
+
+  @include tablet {
+    font-size: $font-xl;
+  }
+
+  @include sm-tablet {
+    font-size: $font-l;
+  }
+
+  @include sm-mobile {
+    font-size: $font-m;
+  }
+}
+
+@mixin subtitle {
+  margin-bottom: 5.33rem;
+
+  color: rgba($color: $gray, $alpha: 0.8);
+  font-size: $font-xl;
+  font-weight: 400;
+
+  text-align: center;
+
+  @include tablet {
+    font-size: $font-l;
+  }
+
+  @include sm-tablet {
+    font-size: $font-m;
+  }
+
+  @include sm-mobile {
+    font-size: $font-s;
+  }
+}
+
+@mixin white-gradient {
+  background: linear-gradient(to right,  
+  rgba($white, 1) 0%,
+  rgba($white, 0) 100%);
+}

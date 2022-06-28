@@ -1,0 +1,48 @@
+.icon__user {
+  width: 14px;
+  height: 14px;
+  fill: $purple;
+
+  transition: all 0.2s ease;
+}
+
+.icon__more {
+  width: 7px;
+  height: 15px;
+  stroke: $purple;
+
+  transition: all 0.2s ease;
+
+  &--large {
+    width: 12px;
+    height: 25px;
+    stroke: $purple;
+  }
+}
+
+.social__icon {
+  width: 25px;
+  height: 25px;
+  fill: $purple;
+
+  transition: all 0.2s ease;
+
+  &--twitter {
+    width: 27px;
+    height: 22px;
+
+    stroke: $purple;
+  }
+
+  &--youtube {
+    width: 28px;
+    height: 23px;
+
+    stroke: $purple;
+  }
+
+  &--facebook {
+    width: 12px;
+    height: 21px;
+  }
+}
